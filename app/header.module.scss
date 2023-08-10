@@ -1,0 +1,31 @@
+/* header.module.scss */
+.header {
+  width: 100vw;
+  height: 3rem;
+  background-color: white;
+  box-shadow: 0 2px 2px -2px rgba(128, 128, 128, 0.578);
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  top: -10px;
+  z-index: 5;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+.headers ul {
+  margin-right: 1.25rem;
+}
+
+.headers li {
+  margin: 0 1rem;
+  display: inline-block;
+}
+
+.header {
+  /* ここに通常のヘッダースタイルを追加します */
+}
+
+.scrolled {
+  top: 0;  /* スクロール時にヘッダーを表示します。 */
+}

@@ -1,0 +1,53 @@
+.main {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+.topPage{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.nodoteLogo {
+  height: 20rem;
+  width: 20rem;
+  margin-left: 1rem;
+  margin-top: -2rem;
+  z-index: 2;
+  background:url(../public/nodote.svg) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.scroll{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: -10rem;
+  font-size: 0.3rem;
+  color: #838383;
+  &::after{
+    content: url(../public/scroll.svg);
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    height: 1rem;
+    width: 1.2rem;
+    background-size: contain;
+  }
+}
+.about{
+  min-height: 100vh;
+  margin: 15rem 0 0 5rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.3rem;
+  font-size: 1.2rem;
+  max-width: 30rem;
+  .aboutTitle{
+    height: 5rem;
+    width: 20rem;
+    background: url(../public/aboutNodote.svg) no-repeat;
+    background-size: contain;
+  }
+  .aboutText{
+  }
+}
+
