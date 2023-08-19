@@ -24,15 +24,18 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={isScrolled ? styles.scrolled : styles.header}>
-      <nav className={styles.headers}>
-        <div className={styles.logo}>ロゴ</div>
-        <ul>
-          <li>nodote</li>
-          <li>works</li>
-          <li>contact</li>
-        </ul>
-      </nav>
+    <header className={isScrolled ? styles.scrolled : styles.header }>
+      <div className={styles.headers}>
+      <div className={styles.logo}>ロゴ</div>
+
+        <nav>
+          <ul>
+            <li>works</li>
+            <li>company</li>
+            <li>contact</li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 };

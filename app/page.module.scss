@@ -1,6 +1,4 @@
-.main {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
-}
+$nodote:#E73A10;
 .topPage{
   display: flex;
   height: 100vh;
@@ -12,7 +10,7 @@
   width: 20rem;
   margin-left: 1rem;
   margin-top: -2rem;
-  z-index: 2;
+  z-index: 1;
   background:url(../public/nodote.svg) no-repeat;
   background-size: contain;
   background-position: center;
@@ -23,6 +21,7 @@
   flex-direction: column;
   margin-top: -10rem;
   font-size: 0.3rem;
+  letter-spacing: 0.1rem;
   color: #838383;
   &::after{
     content: url(../public/scroll.svg);
@@ -35,7 +34,6 @@
   }
 }
 .about{
-  min-height: 100vh;
   margin: 15rem 0 0 5rem;
   letter-spacing: 0.2rem;
   line-height: 2.3rem;
@@ -50,4 +48,56 @@
   .aboutText{
   }
 }
+.works{
+  margin: 15rem 0 0 5rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.3rem;
+  font-size: 1.2rem;
+  max-width: 30rem;
+  .worksTitle{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    height: 5rem;
+    width: 20rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+  .worksText{
+  }
+}
+.company{
+  margin: 15rem 0 0 5rem;
+  letter-spacing: 0.2rem;
+  line-height: 2.3rem;
+  font-size: 1.2rem;
+  max-width: 30rem;
+  .companyTitle{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    height: 5rem;
+    width: 20rem;
+    font-weight: 900;
+    font-size: 1.8rem;
+  }
+  .companyText{
+  }
+}
 
+.main {
+  font-family: 'Noto Sans JP', sans-serif;
+  color: #3e3e3e;
+}
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 5rem;
+  background-color: $nodote;
+  
+  .footerText{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-weight: 300;
+  }
+}
