@@ -1,4 +1,9 @@
 $nodote:#E73A10;
+.main{
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+}
 .topPage{
   display: flex;
   height: 100vh;
